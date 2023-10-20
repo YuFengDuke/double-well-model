@@ -4,7 +4,6 @@ if nargin < 4
     dt = 1;
 end
  
-% a_list = (th - b_list)./(C_list.^2);
 b_list = ones(size(C_list));
 num_state = size(C_list,2);
 

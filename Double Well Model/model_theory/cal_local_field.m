@@ -16,9 +16,3 @@ for i = 1:pattern_num
     pdf_t =  add_noise(init_w, pdf_t, r3);
     pdf_t = pdf_time_evolve(init_w, pdf_t, r1, r2, r3, C, 1);
 end
-
-%%inbalance correction
-% mean_h = max(mean_h, 0);
-    
-% mean_h = mean_h * c * f;
-% std_h = sqrt(c*f/N) * std_h;

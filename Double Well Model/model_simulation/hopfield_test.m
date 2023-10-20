@@ -4,7 +4,6 @@ neuron_number=size(I,2);
 prev_I = I;
 for i=1:20
     count = 0;
-%      O = randperm(neuron_number);
     O = 1:neuron_number;
     next_I = zeros(size(prev_I));
     for m = 1:neuron_number
